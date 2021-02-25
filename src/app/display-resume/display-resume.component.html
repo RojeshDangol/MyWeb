@@ -1,1 +1,5 @@
-<p>display-resume works!</p>
+<li *ngFor="let element of newData;let i= index">
+    {{element.name}}
+    <button (click)="delete(i)">Delete</button>
+    <button (click)="update(i, i-1)">Update</button>
+</li>
