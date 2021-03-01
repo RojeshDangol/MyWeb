@@ -14,6 +14,7 @@ import { GamesComponent } from './games/games.component';
 import { Materials } from './modules/material.module';
 
 import { NavListComponent } from './navigation/nav-list/nav-list.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -27,7 +28,8 @@ import { NavListComponent } from './navigation/nav-list/nav-list.component';
     DisplayResumeComponent,
     HomeComponent,
     GamesComponent,
-    NavListComponent
+    NavListComponent,
+    HeaderComponent
   
   ],
   imports: [
