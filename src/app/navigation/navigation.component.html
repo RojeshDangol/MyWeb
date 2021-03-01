@@ -1,3 +1,22 @@
 
-<button routerLink="/form">Create Resume</button>
-<button routerLink="/display">Display Resume</button>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" >
+        <app-nav-list></app-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <button (click)="sidenav.toggle()">Menu</button>
+    </mat-sidenav-content>
+    <!--<mat-sidenav-content  routerLink="/home">Home</mat-sidenav-content>
+    <mat-sidenav-content  routerLink="/games">Games</mat-sidenav-content>
+    <mat-sidenav-content  routerLink="/form">Form</mat-sidenav-content>
+    <mat-sidenav-content  routerLink="/display">Display</mat-sidenav-content>
+    [matMenuTriggerFOr]="MainMenu"
+    !-->
+</mat-sidenav-container>
+ 
+<mat-menu #MainMenu>
+    <button mat-menu-item>Home</button>
+    <button mat-menu-item>Games</button> 
+    <button mat-menu-item>Form</button>
+</mat-menu>
+
