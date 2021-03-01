@@ -9,6 +9,14 @@ const routes: Routes = [
   {
     path: 'display',
     loadChildren: ()=>import('./display-resume/display-resume.module').then(m=>m.DisplayResumeModule)
+  },
+  {
+    path: 'home',
+    loadChildren: ()=>import('./home/home.module').then(m=>m.HomeModule)
+  },
+  {
+    path: 'games',
+    loadChildren: ()=> import('./games/games.module').then(m=>m.GamesModule)
   }
 ];
 
