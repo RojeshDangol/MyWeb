@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
+import { NavService } from '../services/nav.service';
 
 @Component({
   selector: 'app-navigation',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('sidenav') public sidenav!: MatSidenav;
+  
+  
+  constructor(public nav: NavService) { }
 
   ngOnInit(): void {
+    
   }
 
+  ngAfterViewInit(): void{
+    this.nav.setSideNav(this.sidenav);
+  }
+
+ 
 }
