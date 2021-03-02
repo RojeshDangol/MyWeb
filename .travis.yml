@@ -11,7 +11,11 @@ script:
     - npm run build # Generates the dist folder with built angular app
 
 deploy:
-    provider: azure
+    provider: azure_web_apps
+    username: rojesh\$rojesh
+    password: unLhlC6e72C4732yyhdmDzB7xsXhjpfdsanTHKqc4PXLlKbxW3R7EByB59yJ
+    site: ftps://waws-prod-dm1-085.ftp.azurewebsites.windows.net/site/wwwroot
+
     skip_cleanup: true # Prevent travis from cleaning out the branch before the deploy occurs
     github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
     on:
