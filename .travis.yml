@@ -13,7 +13,7 @@ script:
 deploy:
     provider: azure_web_apps
     username: rojesh\$rojesh
-    password: unLhlC6e72C4732yyhdmDzB7xsXhjpfdsanTHKqc4PXLlKbxW3R7EByB59yJ
+    password: PJ20iPiNazw5XRXm1oii2xcXaP8RAeuBbnY0gJaMPzp9HtasnAhtjsPsJA1X
     site: ftps://waws-prod-dm1-085.ftp.azurewebsites.windows.net/site/wwwroot
 
     skip_cleanup: true # Prevent travis from cleaning out the branch before the deploy occurs
